@@ -1,14 +1,37 @@
 "use strict"
 console.clear()
+
 /*
 Palidroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
+
+user word : prompt inserisci parola
+
+la funzione a cui daremo un nome deve fare:
+
+1. girare la parola e verificare sia palindroma (creare funzione per questo)
+(if word.toLowerCase === userWord console.log la parola è palindroma
+else 
+la parola non è palindroma.)
+
 */
-
-
-
-
+function isPalindromaWord() {
+    const userWord = prompt("Inserisci una parola:");
+    
+    if (userWord) {
+      const reversed = reversedWord(userWord);
+      if (reversed.toLowerCase() === userWord.toLowerCase()) {
+        console.log("La parola è palindroma.");
+      } else {
+        console.log("La parola non è palindroma.");
+      }
+    } else {
+      console.log("Inserimento non valido.");
+    }
+  }
+  
+//   isPalindromaWord()
 
 /*
 Pari e Dispari
