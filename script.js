@@ -40,4 +40,41 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
+
+
+cose da fare:
+- prompt
+- funzione ocn math.floor e math.random per generare numero
+- numero pc + numero user
+- funzione per pari o dispari
+- condizione per decidere vincitore
 */
+
+// dichiaro le variabili
+
+function oddEven(){
+
+const userChoice = prompt("Scegli 'pari' o 'dispari'.").toLowerCase();
+console.log(userChoice);
+const userNumber = parseInt(prompt("Scegli un numero da 1 a 5."), 10);
+console.log(userNumber);
+const pcNumber = getRandomNumber(1, 5);
+console.log(pcNumber);
+
+// Calcolare la somma
+const sum = userNumber + pcNumber;
+console.log(sum);
+
+// Controllare se la somma è pari
+const isEven = sum % 2 === 0;
+
+// Stabilire chi ha vinto
+if ((userChoice === "pari" && isEven) || (userChoice === "dispari" && !isEven)) {
+    console.log("Hai vinto!");
+} else {
+    console.log("Hai perso!");
+}
+
+}
+
+oddEven()
