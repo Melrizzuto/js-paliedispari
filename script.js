@@ -31,7 +31,7 @@ function isPalindromaWord() {
     }
   }
   
-//   isPalindromaWord()
+//   isPalindromaWord() funzione da evocare
 
 /*
 Pari e Dispari
@@ -77,4 +77,4 @@ if ((userChoice === "pari" && isEven) || (userChoice === "dispari" && !isEven)) 
 
 }
 
-oddEven()
+// oddEven() funzione da evocare 
