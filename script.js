@@ -6,6 +6,9 @@ Palidroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 
+
+
+cose da fare:
 user word : prompt inserisci parola
 
 la funzione a cui daremo un nome deve fare:
